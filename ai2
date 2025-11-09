@@ -1,0 +1,62 @@
+//CODE:
+
+import heapq
+def heuristic(a, b):
+    return abs(a[0] - b[0]) + abs(a[1] - b[1])
+def astar(grid, start, goal):
+    rows, cols = len(grid), len(grid[0])
+    open_set = []
+    heapq.heappush(open_set, (0 + heuristic(start, goal), 0, start))
+    came_from = {}  
+    g_score = {start: 0}
+    count = 0 
+    while open_set:
+        current_f, _, current = heapq.heappop(open_set)
+        if current == goal:
+            path = []
+            while current in came_from:
+                path.append(current)
+                current = came_from[current]
+            path.append(start)
+            path.reverse()
+            return path
+        neighbors = get_neighbors(current, rows, cols)
+        for neighbor in neighbors:
+            if grid[neighbor[0]][neighbor[1]] == 1:
+                continue
+            tentative_g_score = g_score[current] + 1  
+            if neighbor not in g_score or tentative_g_score < g_score[neighbor]:
+                came_from[neighbor] = current
+                g_score[neighbor] = tentative_g_score
+                f_score = tentative_g_score + heuristic(neighbor, goal)
+                count += 1
+                heapq.heappush(open_set, (f_score, count, neighbor))
+    return None 
+def get_neighbors(node, rows, cols):
+    directions = [(1,0), (-1,0), (0,1), (0,-1)]
+    result = []
+    for dr, dc in directions:
+        r, c = node[0] + dr, node[1] + dc
+        if 0 <= r < rows and 0 <= c < cols:
+            result.append((r,c))
+    return result
+grid = [
+    [0, 0, 0, 0, 0],
+    [0, 1, 1, 0, 0],  
+    [0, 0, 0, 1, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 0, 1, 0]
+]
+start = (0, 0)
+goal = (4, 4)
+path = astar(grid, start, goal)
+if path:
+    print("Path found:")
+    print(path)
+else:
+    print("No path found.")
+
+
+//OUTPUT:
+
+ 
