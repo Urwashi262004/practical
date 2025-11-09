@@ -1,0 +1,29 @@
+def chatbot():
+    print("🤖 Chatbot: Hello! I am your shopping assistant. How can I help you today?")
+
+    while True:
+        user_input = input("You: ").lower()
+
+        if "order" in user_input:
+            print("🤖 Chatbot: Please provide your order ID to check the status.")
+
+        elif "return" in user_input:
+            print("🤖 Chatbot: You can return items within 7 days of delivery.")
+
+        elif "delivery" in user_input or "shipping" in user_input:
+            print("🤖 Chatbot: Standard delivery takes 3-5 business days.")
+
+        elif "payment" in user_input or "pay" in user_input:
+            print("🤖 Chatbot: We accept UPI, credit/debit cards, and net banking.")
+
+        elif "hello" in user_input or "hi" in user_input:
+            print("🤖 Chatbot: Hello! How can I assist you today?")
+
+        elif "bye" in user_input or "exit" in user_input or "quit" in user_input:
+            print("🤖 Chatbot: Thank you for shopping with us! Have a great day! 👋")
+            break
+
+        else:
+            print("🤖 Chatbot: Sorry, I didn’t understand that. Please try asking about order, return, delivery, or payment.")
+
+chatbot()
