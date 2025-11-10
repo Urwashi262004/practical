@@ -1,0 +1,11 @@
+Difference between BFS and DFS
+
+Feature	BFS (Breadth First Search)	DFS (Depth First Search)
+
+Traversal Method	Level by level	Depth-wise (goes deep first)
+Data Structure Used	Queue	Stack (or recursion)
+Approach	Explores all neighbors first	Explores one path fully before backtracking
+Shortest Path	Finds the shortest path in unweighted graphs	Does not guarantee shortest path
+Memory Usage	High (stores all nodes at current level)	Low (only stores current path)
+Implementation	Iterative	Often recursive
+Example Use	Shortest route, social networks	Maze solving, topological sorting
