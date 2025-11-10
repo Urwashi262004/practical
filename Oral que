@@ -1,0 +1,198 @@
+
+🧠 Assignment 1: DFS & BFS
+
+💬 Viva Questions & Answers
+
+1. Q: What is DFS?
+A: DFS (Depth First Search) explores as far as possible along each branch before backtracking.
+
+
+2. Q: What is BFS?
+A: BFS (Breadth First Search) explores all the vertices at the current level before moving to the next level.
+
+
+3. Q: What data structure is used in DFS?
+A: Stack (can be implemented using recursion).
+
+
+4. Q: What data structure is used in BFS?
+A: Queue.
+
+
+5. Q: Is DFS recursive or iterative?
+A: DFS can be both, but often implemented recursively.
+
+
+6. Q: Is BFS recursive?
+A: No, BFS is generally iterative.
+
+
+7. Q: Where is DFS used?
+A: In maze solving, topological sorting, and pathfinding.
+
+
+8. Q: Where is BFS used?
+A: In shortest path (unweighted graphs) and level-order traversal.
+
+
+9. Q: Difference between DFS and BFS?
+A: DFS goes deep, BFS goes level by level.
+
+
+🎯 Assignment 2: A (A-Star) Algorithm*
+
+💬 Viva Questions & Answers
+
+1. Q: What is A* Algorithm?
+A: It’s a pathfinding algorithm that finds the shortest path using cost + heuristic.
+
+
+2. Q: What is the formula used in A*?
+A: f(n) = g(n) + h(n)
+(g = actual cost, h = heuristic cost).
+
+
+3. Q: What is a heuristic function?
+A: It estimates the cost from the current node to the goal.
+
+
+4. Q: Why is A* better than Dijkstra’s algorithm?
+A: A* uses heuristics to guide the search, making it faster.
+
+
+5. Q: Where is A* used?
+A: In games, GPS navigation, and robotics.
+
+
+6. Q: What is an example of heuristic?
+A: Manhattan or Euclidean distance.
+
+
+
+
+---
+
+♟️ Assignment 3: Alpha-Beta Pruning
+
+💬 Viva Questions & Answers
+
+1. Q: What is Alpha-Beta pruning?
+A: It reduces the number of nodes evaluated in the minimax algorithm.
+
+
+2. Q: What are Alpha and Beta?
+A: Alpha = best value for maximizer; Beta = best value for minimizer.
+
+
+3. Q: Does Alpha-Beta pruning affect the result?
+A: No, it gives the same result faster.
+
+
+4. Q: Where is it used?
+A: In two-player games like chess or tic-tac-toe.
+
+
+5. Q: What is the purpose of pruning?
+A: To skip unnecessary branches.
+
+
+
+
+---
+
+👑 Assignment 4: Constraint Satisfaction (N-Queens / Graph Coloring)
+
+💬 Viva Questions & Answers
+
+1. Q: What is a Constraint Satisfaction Problem (CSP)?
+A: A problem where variables must satisfy certain constraints.
+
+
+2. Q: What is the N-Queens problem?
+A: Placing N queens on a chessboard so that no two attack each other.
+
+
+3. Q: What is Backtracking?
+A: A method to try possible solutions and backtrack if a constraint fails.
+
+
+4. Q: What is Branch and Bound?
+A: It’s an optimization technique that cuts off unpromising branches early.
+
+
+5. Q: Difference between Backtracking and Branch & Bound?
+A: Backtracking finds a solution; Branch & Bound finds the best one.
+
+
+6. Q: Where is Graph Coloring used?
+A: In scheduling, map coloring, and register allocation.
+
+
+
+
+---
+
+💡 Assignment 5: Greedy Algorithms
+
+💬 Viva Questions & Answers
+
+1. Q: What is a Greedy Algorithm?
+A: It makes the locally best choice at each step, aiming for a global optimum.
+
+
+2. Q: Example of Greedy Algorithm?
+A: Prim’s, Kruskal’s, Dijkstra’s algorithms.
+
+
+3. Q: What is Prim’s Algorithm?
+A: Finds Minimum Spanning Tree by choosing the smallest edge from the growing tree.
+
+
+4. Q: What is Kruskal’s Algorithm?
+A: Builds MST by selecting smallest edges without forming a cycle.
+
+
+5. Q: What is Dijkstra’s Algorithm?
+A: Finds the shortest path from a source to all other vertices.
+
+
+6. Q: Difference between Prim’s and Kruskal’s?
+A: Prim’s grows a single tree; Kruskal’s builds multiple trees and merges them.
+
+
+7. Q: What is Job Scheduling Problem?
+A: Selecting jobs with deadlines and profits to maximize total profit.
+
+
+
+
+---
+
+💬 Assignment 6: Chatbot (Customer Interaction)
+
+💬 Viva Questions & Answers
+
+1. Q: What is a Chatbot?
+A: A program that simulates human conversation using text or voice.
+
+
+2. Q: What are the types of Chatbots?
+A: Rule-based and AI-based.
+
+
+3. Q: What is NLP?
+A: Natural Language Processing – helps computers understand human language.
+
+
+4. Q: Which Python libraries are used for Chatbots?
+A: NLTK, ChatterBot, or simple if-else logic.
+
+
+5. Q: What are intents in a Chatbot?
+A: Intents represent the purpose of the user’s input (like “order pizza”, “get help”).
+
+
+6. Q: What are the advantages of Chatbots?
+A: 24/7 support, quick responses, and cost savings.
+
+
